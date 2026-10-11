@@ -1,0 +1,6 @@
+# Python
+numpy
+scipy
+pypdf
+# Node (build_docx.js)
+# npm install docx@9

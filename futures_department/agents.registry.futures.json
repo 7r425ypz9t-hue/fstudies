@@ -1,0 +1,156 @@
+{
+  "registry": "CIRP agents — Futures Studies Department (FSD)",
+  "version": "1.1",
+  "date": "2026-10-11",
+  "source_project": "CPFRA-X",
+  "status_rule": "emergent→hired on first use; reused automatically",
+  "department_agents": [
+    {
+      "id": "FSD-01",
+      "name_ar": "مدير المشروع البحثي",
+      "unit": "الإدارة",
+      "status": "hired"
+    },
+    {
+      "id": "FSD-02",
+      "name_ar": "مستكشف المعرفة والفجوات",
+      "unit": "الرصد والإشارات",
+      "skills": [
+        "research-gap-detection-ar"
+      ],
+      "status": "hired"
+    },
+    {
+      "id": "FSD-03",
+      "name_ar": "محلل السياسات الثقافية",
+      "unit": "السيناريوهات والنمذجة",
+      "skills": [
+        "cultural-policy-analyst"
+      ],
+      "status": "hired"
+    },
+    {
+      "id": "FSD-04",
+      "name_ar": "خبير الاقتصاد الثقافي",
+      "unit": "القياس والمؤشرات",
+      "skills": [
+        "cultural-evidence-verification-ar"
+      ],
+      "status": "hired"
+    },
+    {
+      "id": "FSD-05",
+      "name_ar": "محلل الفكر والفلسفة الثقافية",
+      "unit": "القياس والمؤشرات",
+      "status": "hired"
+    },
+    {
+      "id": "FSD-06",
+      "name_ar": "خبير الاستشراف الاستراتيجي",
+      "unit": "السيناريوهات والنمذجة",
+      "skills": [
+        "cultural-futures-simulation-ar"
+      ],
+      "status": "hired"
+    },
+    {
+      "id": "FSD-07",
+      "name_ar": "خبير التحليل المنظومي",
+      "unit": "السيناريوهات والنمذجة",
+      "skills": [
+        "cultural-futures-simulation-ar"
+      ],
+      "status": "hired"
+    },
+    {
+      "id": "FSD-09",
+      "name_ar": "مهندس النماذج والنظريات",
+      "unit": "السيناريوهات والنمذجة",
+      "skills": [
+        "cultural-futures-simulation-ar"
+      ],
+      "status": "hired"
+    },
+    {
+      "id": "FSD-12",
+      "name_ar": "المحكّم العلمي المستقل",
+      "unit": "النشر والمعرفة المفتوحة",
+      "status": "hired"
+    }
+  ],
+  "general_agents": [
+    {
+      "id": "GEN-08",
+      "name_ar": "خبير البيانات والإحصاء",
+      "scope": "all_departments",
+      "mandatory": false,
+      "skills": [
+        "cultural-evidence-verification-ar"
+      ]
+    },
+    {
+      "id": "GEN-10",
+      "name_ar": "المحرر الأكاديمي",
+      "scope": "all_departments",
+      "mandatory": false
+    },
+    {
+      "id": "GEN-11",
+      "name_ar": "مدقق المراجع والنزاهة العلمية",
+      "scope": "all_departments",
+      "mandatory": true,
+      "skills": [
+        "source-integrity-ar"
+      ]
+    },
+    {
+      "id": "GEN-13",
+      "name_ar": "محرر النشر والإخراج",
+      "scope": "all_departments",
+      "mandatory": false,
+      "skills": [
+        "docx",
+        "pdf",
+        "pptx"
+      ]
+    },
+    {
+      "id": "GEN-14",
+      "name_ar": "وكيل الموضوعية (مراجع ما وراء المعرفة)",
+      "scope": "all_departments",
+      "mandatory": true,
+      "skills": [
+        "objectivity-auditor-ar"
+      ]
+    },
+    {
+      "id": "GEN-15",
+      "name_ar": "محامي الشيطان",
+      "scope": "all_departments",
+      "mandatory": true,
+      "skills": [
+        "devils-advocate-ar"
+      ]
+    },
+    {
+      "id": "GEN-16",
+      "name_ar": "وكيل التحليل الإحصائي والنمذجة الرياضية",
+      "scope": "all_departments",
+      "mandatory": false,
+      "invoke_when": "numbers, tables, series, frequencies, text coding, theory-to-equation, functional-form search, test selection, power analysis",
+      "skills": [
+        "statistical-modeling-ar"
+      ],
+      "status": "hired",
+      "first_project": "CPFRA-X"
+    }
+  ],
+  "gate_order": [
+    "produce",
+    "verify:GEN-11",
+    "challenge:GEN-15",
+    "defend",
+    "objectivity:GEN-14",
+    "approve:FSD-01"
+  ]
+}
